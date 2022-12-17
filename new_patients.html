@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title> clinic</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+        <link rel="stylesheet" href="css/new_patient.css">
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name= "viewport" content = "width = 320, initial-scale = 2.3, user-scalable = no">
+        <meta name= "viewport" content = "width = device-width">
+        <meta name = "viewport" content = "initial-scale = 1.0">
+        <meta name = "viewport" content = "initial-scale = 2.3, user-scalable = no">
+        <meta name="viewport" content="width=device-width, initial-scale=.7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     </head>
+<!--Start Of Body -->
+<body >   
+    <nav>
+
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class=" fas fa-bars"></i>
+        </label>
+        <a href="index.html">  <input id="btn-logout" type="submit" value="logOut"> </a>  
+        <ul>
+           <li> <a href="new_patients.html">New Patients</a></li>
+           <li> <a href="patient.html"> Patients </a></li>
+            <li><a href="patient_history.html">Patient History</a></li>
+          </ul>
+      </nav> 
+
+ 
+
+<!--Start Of Section-->    
+<section>
+<div class="body_section">
+    <div class="space2"></div>
+  
+         <div class="new_patient">
+             <form>
+            <h1> Add New Patient </h1>
+            <input  id="btn-send" type="submit" name="submit" value="Save"/><br>
+        </form>
+        </div>
+       <div class="space1"></div>
+       <div class="space1"></div>
+
+       <div class="patient_info">
+        <form style="margin-left: 10%; margin-top: 5%;">
+
+        <input type="number"  placeholder=" Patient Code" name="t_code"><br><br>
+        <input  type="number"  placeholder=" Patient ID" name="t_id"><br><br>
+        <input  type="text" placeholder=" Patient Name" name="t_name"><br><br>
+        <input  type="tel" placeholder=" Patient Phone" name="t_phone"><br><br>
+        <input  type="text"  placeholder=" Patient Address" name="t_add"><br><br>
+        <input  type="email" placeholder=" Patient Email" name="t_email"><br><br>
+
+        </form>
+    </div>
+ <div class="area">
+     <form style="margin-top: 5%;margin-left:5% ;">
+    <label> Patient Side Effects </label><br><br>
+    <textarea >  </textarea>
+    </form>
+ </div>
+
+
+</div>
+
+</section>
+<!--End Of Section-->  
+
+<!--Start Footer--> 
+<footer>
+    <div class="space_3"></div>
+        <div class="footer_part">
+          <p> All Rights Reserved we care &copy;2020</p>
+        </div>
+</footer>
+
+<!--End Footer--> 
+
+</body>
+</html>    

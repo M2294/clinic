@@ -1,0 +1,155 @@
+<html>
+    <head>
+        <title> clinic</title>
+        <link rel="stylesheet" href="css/patient_history.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name= "viewport" content = "width = 320, initial-scale = 2.3, user-scalable = no">
+        <meta name= "viewport" content = "width = device-width">
+        <meta name = "viewport" content = "initial-scale = 1.0">
+        <meta name = "viewport" content = "initial-scale = 2.3, user-scalable = no">
+        <meta name="viewport" content="width=device-width, initial-scale=.7">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+     </head>
+<!--Start Of Body -->
+<body>   
+    <nav> 
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+        <i class=" fas fa-bars"></i>
+        </label>
+        <a href="index.html">  <input id="btn-logout" type="submit" value="logOut"> </a>  
+        <ul>
+           <li> <a href="new_patients.html">New Patients</a></li>
+           <li> <a href="patient.html"> Patients </a></li>
+           <li><a href="patient_history.html">Patient History</a></li>
+        </ul>
+      </nav> 
+<!--Start Of Section-->    
+<div class="space2"></div>
+<section>
+<div class="body_section">
+  
+        <div class="call_patient"> 
+          <form>
+            <h1>Patient Report </h1>
+            <input type=" text" placeholder="Enter Patient Code" name="t_code"><br><br>
+            <input  id="btn-search-2" type="submit" name="Search" value="Search"/>
+          </form>
+<!-- Trigger/Open The Modal -->
+<button id="myBtn"> Add Report</button>
+         
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>  Report Form </h2>
+    </div>
+
+    <div class="modal-body">
+      <form style="margin:0%; width:90%;">
+
+
+
+        <div class="date">
+
+          <div class="date1">
+           <h5>Date</h5> 
+          </div>
+
+          <div class="date2">
+           
+           <input  type="date" name="t_date">
+       
+           </div>
+
+      </div>
+
+
+
+      <div class="space1"></div>
+      <textarea placeholder="Enter Your Report Here......"></textarea> 
+      </form>
+    </div>
+    
+    <a href="patient_history.html">  <input  id="btn-save" type="submit" name="save" value="Save"/></a>  
+   
+ 
+   
+  </div>
+ 
+</div>
+
+<div class="space1"></div>
+
+            <div class="call_patient2">
+              <form >
+              <input type="tel"  placeholder=" Patient ID" name="t_id" readonly><br>
+                 <br>
+                 <input type="text" placeholder=" Patient Name" name="t_name" readonly><br>
+                 <br>
+                 <input type="tel" placeholder=" Patient Phone" name="t_phone" readonly><br><br>
+                 <input type="text"  placeholder=" Patient Address" name="t_add" readonly><br>
+                 <br>
+                 <input type="email" placeholder=" Patient Email" name="t_email" readonly><br>
+                 <br>
+               </form>
+            </div>
+
+         <div class="buttom_report">
+           <form>
+           <button > Show  Report  </button><br>
+          </form>
+         </div>      
+
+</div>
+</section>
+<!--End Of Section-->  
+
+<!--Start Footer--> 
+<footer>
+  
+        <div class="footer_part">
+          <p> All Rights Reserved we care &copy;2020</p>
+        </div>
+</footer>
+
+<!--End Footer--> 
+<script>
+  // Get the modal
+  var modal = document.getElementById("myModal");
+  
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+    modal.style.display = "block";
+  }
+  
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  }
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+
+</body>
+</html>    
